@@ -1,55 +1,29 @@
-/**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
- * Add your name as an author and the date!
- */
+
 package ca.sheridancollege.project;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-/**
- * A concrete class that represents any grouping of cards for a Game. HINT, you might want to subclass this more than
- * once. The group of cards has a maximum size attribute which is flexible for reuse.
- *
- * @author dancye
- * @author Paul Bonenfant Jan 2020
- */
 public class GroupOfCards {
+    // This class represents a group of cards (like a hand or a deck).
+    // It could be used as-is, or it could be extended by a more specific group class BlackjackHand).
 
-    //The group of cards, stored in an ArrayList
-    private ArrayList<Card> cards;
-    private int size;//the size of the grouping
+    private ArrayList<Card> cards; // The list of cards in the group
+    private int size; // The size of the group
 
     public GroupOfCards(int size) {
+        // The constructor for the GroupOfCards class.
+        // It initializes the size of the group.
         this.size = size;
     }
 
-    /**
-     * A method that will get the group of cards as an ArrayList
-     *
-     * @return the group of cards.
-     */
-    public ArrayList<Card> getCards() {
-        return cards;
-    }
+    // These are getter and setter methods for the cards and size properties.
+    public ArrayList<Card> getCards() { return cards; }
+    public int getSize() { return size; }
+    public void setSize(int size) { this.size = size; }
 
+    // This method shuffles the cards in the group.
     public void shuffle() {
         Collections.shuffle(cards);
     }
-
-    /**
-     * @return the size of the group of cards
-     */
-    public int getSize() {
-        return size;
-    }
-
-    /**
-     * @param size the max size for the group of cards
-     */
-    public void setSize(int size) {
-        this.size = size;
-    }
-
-}//end class
+}

@@ -1,49 +1,24 @@
-/**
- * SYST 17796 Project Base code.
- * Students can modify and extend to implement their game.
- * Add your name as an author and the date!
- */
+
 package ca.sheridancollege.project;
 
-/**
- * A class that models each Player in the game. Players have an identifier, which should be unique.
- *
- * @author dancye
- * @author Paul Bonenfant Jan 2020
- */
 public abstract class Player {
+    // This is an abstract class that represents a player in a game.
+    // It should be extended by a more specific player class BlackjackPlayer).
 
-    private String name; //the unique name for this player
+    private String name; // The name of the player
 
-    /**
-     * A constructor that allows you to set the player's unique ID
-     *
-     * @param name the unique ID to assign to this player.
-     */
     public Player(String name) {
+        // The constructor for the Player class.
+        // It initializes the name of the player.
         this.name = name;
     }
 
-    /**
-     * @return the player name
-     */
-    public String getName() {
-        return name;
-    }
+    // These are getter and setter methods for the name property.
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-    /**
-     * Ensure that the playerID is unique
-     *
-     * @param name the player name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    /**
-     * The method to be overridden when you subclass the Player class with your specific type of Player and filled in
-     * with logic to play your game.
-     */
+    // This is an abstract method that should be overridden in the child class.
+    // play() should contain the logic for the player's actions during the game.
     public abstract void play();
-
 }
+
