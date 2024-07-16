@@ -2,8 +2,10 @@
 package ca.sheridancollege.project;
 
 public class BlackjackGame extends Game { // BlackjackGame extends the base Game class
+    private Deck deck; //The deck of the cards for the game
     public BlackjackGame(String name) { // Constructor for BlackjackGame
         super(name); // Call the constructor of the base Game class
+        deck=new Deck();
     }
 
     @Override
