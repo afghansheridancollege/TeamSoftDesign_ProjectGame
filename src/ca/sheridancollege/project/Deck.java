@@ -8,11 +8,11 @@ package ca.sheridancollege.project;
  *
  * @author basil
  */
-public class Deck extends GroupOfCards {
+public class Deck extends GroupOfCards{
     
     public Deck()
     {
-        super(52);//A deck has 52 cards 
+        super(52);// A deck has 52 cards
     }
-            
+    
 }
