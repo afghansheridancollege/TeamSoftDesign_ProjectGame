@@ -15,6 +15,7 @@ public abstract class Game {
         // It initializes the name of the game and creates an empty list of players.
         this.name = name;
         players = new ArrayList();
+        
     }
 
     // These are getter and setter methods for the name and players properties.
