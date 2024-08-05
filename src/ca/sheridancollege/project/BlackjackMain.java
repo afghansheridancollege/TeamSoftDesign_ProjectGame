@@ -15,6 +15,7 @@ public class BlackjackMain {
     BlackjackGame game= new BlackjackGame("Blackjack");
     ArrayList<Player> players= new ArrayList<>();
     players.add(new BlackjackPlayer("Player 1"));
+    players.add(new BlackjackPlayer("Player 2"));
     game.setPlayers(players);
     game.play();
             
