@@ -18,9 +18,14 @@ public abstract class Game {
     }
 
     // These are getter and setter methods for the name and players properties.
-    public String getName() { return name; }
-    public ArrayList<Player> getPlayers() { return players; }
-    public void setPlayers(ArrayList<Player> players) { this.players = players; }
+    public String getName() 
+    { return name; }
+    
+    public ArrayList<Player> getPlayers()
+    { return players; }
+    
+    public void setPlayers(ArrayList<Player> players) 
+    { this.players = players; }
 
     // These are abstract methods that should be overridden in the child class.
     // play() should contain the logic for playing the game.

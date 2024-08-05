@@ -15,12 +15,18 @@ public class GroupOfCards {
         // The constructor for the GroupOfCards class.
         // It initializes the size of the group.
         this.size = size;
+        cards= new ArrayList<>(size);
     }
 
     // These are getter and setter methods for the cards and size properties.
-    public ArrayList<Card> getCards() { return cards; }
-    public int getSize() { return size; }
-    public void setSize(int size) { this.size = size; }
+    public ArrayList<Card> getCards()
+    { return cards; }
+    
+    public int getSize() 
+    { return size; }
+    
+    public void setSize(int size) 
+    { this.size = size; }
 
     // This method shuffles the cards in the group.
     public void shuffle() {
