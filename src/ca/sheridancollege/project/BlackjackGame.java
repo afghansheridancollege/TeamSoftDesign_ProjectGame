@@ -67,17 +67,17 @@ public class BlackjackGame extends Game { // BlackjackGame extends the base Game
             
             if(playerValue > 21)
             {
-                System.out.println(blackjackPlayer.getName() +blackjackPlayer.getHand()+ dealer.getHandValue() +" busts and loses.");
+                System.out.println(blackjackPlayer.getName() +blackjackPlayer.getHand()+ " agains delarers hand of " + dealer.getHandValue() +" busts and loses.");
                 
             }else if(dealerValue > 21 || playerValue > dealerValue)
             {
-                System.out.println(blackjackPlayer.getName() +blackjackPlayer.getHand()+ dealer.getHandValue()+ " wins!");
+                System.out.println(blackjackPlayer.getName() +blackjackPlayer.getHand()+ " agains delarers hand of "+ dealer.getHandValue()+ " wins!");
             }else if (playerValue==dealerValue)
             {
-                System.out.println(blackjackPlayer.getName() +blackjackPlayer.getHand()+ dealer.getHandValue() + " ties with the dealer.");
+                System.out.println(blackjackPlayer.getName() +blackjackPlayer.getHand()+ " agains delarers hand of "+ dealer.getHandValue() + " ties with the dealer.");
             }
             else {
-                System.out.println(blackjackPlayer.getName() +blackjackPlayer.getHand()+ dealer.getHandValue() + " loses.");
+                System.out.println(blackjackPlayer.getName() +blackjackPlayer.getHand()+ " agains delarers hand of "+ dealer.getHandValue() + " loses.");
             }
         }
     }
